@@ -29,7 +29,7 @@ class ViewController: UIViewController
         // 1. Once the currentCount variable is set, each of the UI elements on the screen need to be updated to match the currentCount.
         //    There is a method below that performs these steps. All you need to do perform a method call in the line below.
         //
-        
+        func updateViewsWithCurrentCount() {}
     }
 
     override func didReceiveMemoryWarning()
@@ -45,19 +45,19 @@ class ViewController: UIViewController
         //
         // 2. The textfield needs to always show the current count. Fill in the blank below to set the text value of the textfield.
         //
-        countTextField.text = "\(<#What goes here?#>)"
+        countTextField.text = "\(currentCount)"
         
         //
         // 3. Here we are setting the value property of the UISlider in the view. This causes the slider to set its handle to the
         //    appropriate position. Fill in the blank below.
         //
-        slider.value = <#How about here?#>
+        slider.value = Float(currentCount)
         
         //
         // 4. We also need to update the value of the UIStepper. The user will not see any change to the stepper, but it needs to have a
         //    current value nonetheless, so when + or - is tapped, it will know what value to increment. Fill in the blanks below.
         //
-        stepper.<#What are we setting?#> = <#variable name#>
+        stepper.value = Double(currentCount)
     }
     
     // MARK: - Gesture recognizers
@@ -86,13 +86,13 @@ class ViewController: UIViewController
         //    to this method represents the slider from the view. We need to take the value of the slider and use it to update the
         //    value of our "currentCount" instance variable. Fill in the blank below.
         //
-        currentCount = sender.<#What property should we use here to set our current count?#>
+        currentCount = sender.
         
         //
         // 6. Once we update the value of currentCount, we need to make sure all the UI elements on the screen are updated to keep
         //    everything in sync. We have previously done this (look in viewDidLoad). Fill in the blank below.
         //
-        <#What instruction should go here?#>
+        func updateViewsWithCurrentCount()  {}
     }
     
     @IBAction func stepperValueChanged(sender: UIStepper)
@@ -102,6 +102,6 @@ class ViewController: UIViewController
         //    should look pretty familiar, hint, hint. ;) Fill in the blanks below.
         //
         currentCount = <#What goes here?#>
-        <#How about here?#>
+        func updateViewsWithCurrentCount()  {}
     }
 }
