@@ -73,7 +73,7 @@ class ViewController: UIViewController
             // 8. Hopefully you're seeing a pattern here. After we update the currentCount variable, what do we need to do next? Fill in
             //    the blank below.
             //
-            <#What goes here?#>
+        func updateViewsWithCurrentCount() {}
         }
     }
     
@@ -86,7 +86,7 @@ class ViewController: UIViewController
         //    to this method represents the slider from the view. We need to take the value of the slider and use it to update the
         //    value of our "currentCount" instance variable. Fill in the blank below.
         //
-        currentCount = sender.
+        currentCount = Int(sender.value)
         
         //
         // 6. Once we update the value of currentCount, we need to make sure all the UI elements on the screen are updated to keep
@@ -101,7 +101,7 @@ class ViewController: UIViewController
         // 7. This method is run when the value of the stepper is changed by the user. If you've done steps 5 and 6 already, these steps
         //    should look pretty familiar, hint, hint. ;) Fill in the blanks below.
         //
-        currentCount = <#What goes here?#>
+        currentCount = Int(stepper.value)
         func updateViewsWithCurrentCount()  {}
     }
 }
