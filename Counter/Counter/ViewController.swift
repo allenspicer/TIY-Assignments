@@ -29,7 +29,7 @@ class ViewController: UIViewController
         // 1. Once the currentCount variable is set, each of the UI elements on the screen need to be updated to match the currentCount.
         //    There is a method below that performs these steps. All you need to do perform a method call in the line below.
         //
-        func updateViewsWithCurrentCount() {}
+        updateViewsWithCurrentCount()
     }
 
     override func didReceiveMemoryWarning()
@@ -73,7 +73,7 @@ class ViewController: UIViewController
             // 8. Hopefully you're seeing a pattern here. After we update the currentCount variable, what do we need to do next? Fill in
             //    the blank below.
             //
-        func updateViewsWithCurrentCount() {}
+        updateViewsWithCurrentCount()
         }
     }
     
@@ -92,7 +92,7 @@ class ViewController: UIViewController
         // 6. Once we update the value of currentCount, we need to make sure all the UI elements on the screen are updated to keep
         //    everything in sync. We have previously done this (look in viewDidLoad). Fill in the blank below.
         //
-        func updateViewsWithCurrentCount()  {}
+        updateViewsWithCurrentCount()
     }
     
     @IBAction func stepperValueChanged(sender: UIStepper)
@@ -102,6 +102,6 @@ class ViewController: UIViewController
         //    should look pretty familiar, hint, hint. ;) Fill in the blanks below.
         //
         currentCount = Int(sender.value)
-        func updateViewsWithCurrentCount()  {}
+        updateViewsWithCurrentCount()
     }
 }
